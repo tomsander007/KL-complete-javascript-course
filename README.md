@@ -1,10 +1,17 @@
 # Javascript Course
 
-* [Challenge 1](2-JS-basics/final/index.html)
+* [Challenge 1](2-JS-basics/final/Challenge 1/index.html)
+* [Challenge 2](2-JS-basics/final/Challenge 2/index.html)
 
 
 
 
+
+
+
+
+
+-------------
 
 # Course Material and FAQ for my Complete JavaScript Course
 
