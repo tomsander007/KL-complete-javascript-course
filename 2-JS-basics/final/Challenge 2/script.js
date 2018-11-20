@@ -346,12 +346,12 @@ var mikeFirstScore = prompt("Please input Mike's first score");
 var mikeSecondScore = prompt("Please input Mike's second score");
 var mikeThirdScore = prompt("Please input Mike's third score");
 var mikeScore = (mikeFirstScore + mikeSecondScore + mikeThirdScore);
-alert("Mike score is: " + mikeScore):
+alert("Mike score is: " + mikeScore);
 
 //Mary Score
-var maryFirstScore = prompt("Please input Mike's first score");
-var marySecondScore = prompt("Please input Mike's second score");
-var maryThirdScore = prompt("Please input Mike's third score");
+var maryFirstScore = prompt("Please input Mary's first score");
+var marySecondScore = prompt("Please input Mary's second score");
+var maryThirdScore = prompt("Please input Mary's third score");
 var maryScore = (maryFirstScore + marySecondScore + maryThirdScore);
 alert("May score is: " + maryScore);
 
