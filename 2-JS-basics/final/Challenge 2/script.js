@@ -364,17 +364,17 @@ var maryAverageScore = (maryFirstScore + marySecondScore + maryThirdScore) / tot
 switch (Math.max(johnAverageScore, mikeAverageScore, maryAverageScore)) {
     case johnAverageScore:
         console.log("John's score is higher " + johnAverageScore);
-        alert("John is the winner, score " + johnAverageScore);
+        alert("John is the winner, score: " + johnAverageScore);
         break;
 
     case mikeAverageScore:
         console.log("Mike's core is higher " + mikeAverageScore);
-        alert("Mike is the winner " + mikeAverageScore);
+        alert("Mike is the winner, score: " + mikeAverageScore);
         break;
 
     case maryAverageScore:
         console.log("Mary's score is higher");
-        alert("Mary is the winner");
+        alert("Mary is the winner score: " + maryAverageScore);
         break;
     default:
         console.log("you are draw");
