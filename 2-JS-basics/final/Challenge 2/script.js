@@ -335,9 +335,9 @@ if (scoreJohn > scoreMike) {
 var totalMatch = 3;
 
 // John Score
-var jonhFirstScore = prompt("Please input John firstScore");
-var jonhSecondScore = prompt("Please input John firstScore");
-var jonhThirdScore = prompt("Please input John firstScore");
+var jonhFirstScore = prompt("Please input John first score");
+var jonhSecondScore = prompt("Please input John second score");
+var jonhThirdScore = prompt("Please input John third score");
 var johnScore = jonhFirstScore + jonhSecondScore + jonhThirdScore;
 alert("John Score is: " + johnScore);
 
