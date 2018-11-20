@@ -151,25 +151,6 @@ console.log(BMIMark, BMIJohn);
 var markHigherBMI = BMIMark > BMIJohn;
 console.log('Is Mark\'s BMI higher than John\'s? ' + markHigherBMI);
 */
-var massMark;
-var heightMark;
-
-var massJohn;
-var heightJohn;
-
-massMark = prompt("Please enter Mark's mass");
-heightMark = prompt("Please enter Mark's height");
-
-massJohn = prompt("Please enter John's mass");
-heightJohn = prompt("Please enter John's height");
-
-var BMIMark = massMark /(heightMark * 2);
-var BMIJohn = massMark /(heightJohn * 2);
-
-var hasMarkHeightBMI = BMIMark > BMIJohn;
-alert("Is Mark's BMI higher than John's?" + hasMarkHeightBMI);
-
-
 
 /*****************************
 * If / else statements
@@ -399,10 +380,6 @@ switch (Math.max(johnAverageScore, mikeAverageScore, maryAverageScore)) {
         alert("you are draw");
 
 }
-
-
-
-
 
 /*****************************
 * Functions
