@@ -335,23 +335,23 @@ if (scoreJohn > scoreMike) {
 var totalMatch = 3;
 
 // John Score
-var jonhFirstScore = prompt("Please input John first score");
-var jonhSecondScore = prompt("Please input John second score");
-var jonhThirdScore = prompt("Please input John third score");
+var jonhFirstScore = parseInt(prompt("Please input John first score")) ;
+var jonhSecondScore = parseInt(prompt("Please input John second score"));
+var jonhThirdScore = parseInt(prompt("Please input John third score"));
 var johnScore = jonhFirstScore + jonhSecondScore + jonhThirdScore;
 alert("John Score is: " + johnScore);
 
 //Mike Score
-var mikeFirstScore = prompt("Please input Mike's first score");
-var mikeSecondScore = prompt("Please input Mike's second score");
-var mikeThirdScore = prompt("Please input Mike's third score");
+var mikeFirstScore = parseInt(prompt("Please input Mike's first score")) ;
+var mikeSecondScore = parseInt(prompt("Please input Mike's second score"));
+var mikeThirdScore = parseInt(prompt("Please input Mike's third score"));
 var mikeScore = mikeFirstScore + mikeSecondScore + mikeThirdScore;
 alert("Mike score is: " + mikeScore);
 
 //Mary Score
-var maryFirstScore = prompt("Please input Mary's first score");
-var marySecondScore = prompt("Please input Mary's second score");
-var maryThirdScore = prompt("Please input Mary's third score");
+var maryFirstScore = parseInt(prompt("Please input Mary's first score"));
+var marySecondScore = parseInt(prompt("Please input Mary's second score")) ;
+var maryThirdScore = parseInt(prompt("Please input Mary's third score"));
 var maryScore = maryFirstScore + marySecondScore + maryThirdScore;
 alert("May score is: " + maryScore);
 

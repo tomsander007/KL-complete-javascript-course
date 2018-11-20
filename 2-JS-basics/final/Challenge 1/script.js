@@ -157,11 +157,11 @@ var heightMark;
 var massJohn;
 var heightJohn;
 
-massMark = prompt("Please enter Mark's mass");
-heightMark = prompt("Please enter Mark's height");
+massMark = parseInt(prompt("Please enter Mark's mass"));
+heightMark = parseInt(prompt("Please enter Mark's height"));
 
-massJohn = prompt("Please enter John's mass");
-heightJohn = prompt("Please enter John's height");
+massJohn = parseInt(prompt("Please enter John's mass"));
+heightJohn = parseInt(prompt("Please enter John's height"));
 
 var BMIMark = massMark /(heightMark * 2);
 var BMIJohn = massMark /(heightJohn * 2);
