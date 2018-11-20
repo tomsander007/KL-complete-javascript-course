@@ -12,6 +12,7 @@
 
 
 -------------
+## End Java script code
 
 # Course Material and FAQ for my Complete JavaScript Course
 
