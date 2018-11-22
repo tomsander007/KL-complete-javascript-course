@@ -480,14 +480,14 @@ var percentage;
 
 function tipCalculation(bill){
     if (bill < 50 ){
-        percentage = .2;
+        percentage = 20;
         return bill * percentage /100;
 
     } else if (bill >= 50 && bill <= 200){
-        percentage = .15;
+        percentage = 15;
         return bill * percentage / 100;
     } else if (bill > 200){
-        percentage = .1;
+        percentage = 10;
         return bill * percentage / 100;
     }
     else {
@@ -522,6 +522,7 @@ alert("Your billing info: \n" +
     "1. First Bill: " + jonhBillsPlusTip[0] + "\n" +
     "2. Second Bill: " + jonhBillsPlusTip[1] + "\n" +
     "3. Third Bill: " + jonhBillsPlusTip[2]);
+window.location = 'https://tomsander007.github.io/KL-complete-javascript-course/';
 
 
 
