@@ -481,7 +481,7 @@ var percentage;
 function tipCalculation(bill){
     if (bill < 50 ){
         percentage = .2;
-        bill * percentage /100;
+        return bill * percentage /100;
 
     } else if (bill >= 50 && bill <= 200){
         percentage = .15;
@@ -514,13 +514,13 @@ console.log("Your final second bill is: " + jonhBillsPlusTip[1]);
 console.log("Your final third bill is: " + jonhBillsPlusTip[2]);
 
 
-alert("Your billing info: /n" +
-    "1. First Tip: " + jonhTips[0] + "/n" +
-    "2. Second Tip: " + jonhTips[1] + "/n" +
-    "3. Third Tip: " + jonhTips[2] + "/n/n/n" +
-    "Your final Bill: /n" +
-    "1. First Bill: " + jonhBillsPlusTip[0] + "/n" +
-    "2. Second Bill: " + jonhBillsPlusTip[1] + "/n" +
+alert("Your billing info: \n" +
+    "1. First Tip: " + jonhTips[0] + "\n" +
+    "2. Second Tip: " + jonhTips[1] + "\n" +
+    "3. Third Tip: " + jonhTips[2] + "\n\n\n" +
+    "Your final Bill: \n" +
+    "1. First Bill: " + jonhBillsPlusTip[0] + "\n" +
+    "2. Second Bill: " + jonhBillsPlusTip[1] + "\n" +
     "3. Third Bill: " + jonhBillsPlusTip[2]);
 
 
