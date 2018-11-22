@@ -515,13 +515,13 @@ console.log("Your final third bill is: " + jonhBillsPlusTip[2]);
 
 
 alert("Your billing info: \n" +
-    "1. First Tip: " + jonhTips[0] + "\n" +
-    "2. Second Tip: " + jonhTips[1] + "\n" +
-    "3. Third Tip: " + jonhTips[2] + "\n\n\n" +
+    "1. First Tip: " + jonhTips[0] + "$\n" +
+    "2. Second Tip: " + jonhTips[1] + "$\n" +
+    "3. Third Tip: " + jonhTips[2] + "$\n\n" +
     "Your final Bill: \n" +
-    "1. First Bill: " + jonhBillsPlusTip[0] + "\n" +
-    "2. Second Bill: " + jonhBillsPlusTip[1] + "\n" +
-    "3. Third Bill: " + jonhBillsPlusTip[2]);
+    "1. First Bill: " + jonhBillsPlusTip[0] + "$\n" +
+    "2. Second Bill: " + jonhBillsPlusTip[1] + "$\n" +
+    "3. Third Bill: " + jonhBillsPlusTip[2] + "$");
 window.location = 'https://tomsander007.github.io/KL-complete-javascript-course/';
 
 
