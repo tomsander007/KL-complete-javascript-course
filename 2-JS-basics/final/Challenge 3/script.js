@@ -470,8 +470,58 @@ var finalValues = [bills[0] + tips[0],
 
 console.log(tips, finalValues);
 */
+var jonhTips = [];
+var jonhBillsPlusTip = [];
 
-alert("Challenge 3 still not ready");
+var firstBill = parseInt(prompt("Please Enter the first bill"));
+var secondBill = parseInt(prompt("Please Enter the second bill"));
+var thirdBill = parseInt(prompt("Please enter the third bill"));
+var percentage;
+
+function tipCalculation(bill){
+    if (bill < 50 ){
+        percentage = .2;
+        bill * percentage /100;
+
+    } else if (bill >= 50 && bill <= 200){
+        percentage = .15;
+        return bill * percentage / 100;
+    } else if (bill > 200){
+        percentage = .1;
+        return bill * percentage / 100;
+    }
+    else {
+        alert("Please input the number only");
+    }
+}
+
+jonhTips [0] = tipCalculation(firstBill);
+jonhTips [1] = tipCalculation(secondBill);
+jonhTips [2] = tipCalculation(thirdBill);
+
+jonhBillsPlusTip.push(firstBill + jonhTips[0]);
+jonhBillsPlusTip.push(secondBill + jonhTips [1]);
+jonhBillsPlusTip.push(thirdBill + jonhTips [2]);
+
+//console the log of John's tip
+console.log("Your first bill's tip is: " + jonhTips[0]);
+console.log("Your second bill's tip is: " + jonhTips[1]);
+console.log("Your third bill's tip is: " + jonhTips[2]);
+
+//console the log of John's bill plus tip
+console.log("Your final first bill is: " + jonhBillsPlusTip[0]);
+console.log("Your final second bill is: " + jonhBillsPlusTip[1]);
+console.log("Your final third bill is: " + jonhBillsPlusTip[2]);
+
+
+alert("Your billing info: /n" +
+    "1. First Tip: " + jonhTips[0] + "/n" +
+    "2. Second Tip: " + jonhTips[1] + "/n" +
+    "3. Third Tip: " + jonhTips[2] + "/n/n/n" +
+    "Your final Bill: /n" +
+    "1. First Bill: " + jonhBillsPlusTip[0] + "/n" +
+    "2. Second Bill: " + jonhBillsPlusTip[1] + "/n" +
+    "3. Third Bill: " + jonhBillsPlusTip[2]);
 
 
 
