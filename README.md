@@ -3,6 +3,8 @@
 * [Challenge 1](2-JS-basics/final/Challenge 1/index.html)
 * [Challenge 2](2-JS-basics/final/Challenge 2/index.html)
 * [Challenge 3](2-JS-basics/final/Challenge 3/index.html)
+* [Challenge 4](2-JS-basics/final/Challenge 4/index.html)
+* [Challenge 5](2-JS-basics/final/Challenge 5/index.html)
 
 
 
