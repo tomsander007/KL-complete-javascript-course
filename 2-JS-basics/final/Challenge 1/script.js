@@ -168,6 +168,7 @@ var BMIJohn = massMark /(heightJohn * 2);
 
 var hasMarkHeightBMI = BMIMark > BMIJohn;
 alert("Is Mark's BMI higher than John's?" + hasMarkHeightBMI);
+window.location = 'https://tomsander007.github.io/KL-complete-javascript-course/';
 
 
 

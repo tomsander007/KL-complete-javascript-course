@@ -381,7 +381,7 @@ switch (Math.max(johnAverageScore, mikeAverageScore, maryAverageScore)) {
         alert("you are draw");
 
 }
-
+window.location = 'https://tomsander007.github.io/KL-complete-javascript-course/';
 /*****************************
 * Functions
 */
