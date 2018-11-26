@@ -1,6 +1,6 @@
 /*****************************
-* Variables and data types
-*/
+ * Variables and data types
+ */
 /*
 var firstName = 'John';
 console.log(firstName);
@@ -24,10 +24,9 @@ var if = 23;
 */
 
 
-
 /*****************************
-* Variable mutation and type coercion
-*/
+ * Variable mutation and type coercion
+ */
 /*
 var firstName = 'John';
 var age = 28;
@@ -52,10 +51,9 @@ console.log(firstName + ' ' + lastName);
 */
 
 
-
 /*****************************
-* Basic operators
-*/
+ * Basic operators
+ */
 /*
 var year, yearJohn, yearMark;
 now = 2018;
@@ -87,10 +85,9 @@ console.log(typeof x);
 */
 
 
-
 /*****************************
-* Operator precedence
-*/
+ * Operator precedence
+ */
 /*
 var now = 2018;
 var yearJohn = 1989;
@@ -122,10 +119,9 @@ console.log(x);
 */
 
 
-
 /*****************************
-* CODING CHALLENGE 1
-*/
+ * CODING CHALLENGE 1
+ */
 
 /*
 Mark and John are trying to compare their BMI (Body Mass Index), which is calculated using the formula: BMI = mass / height^2 = mass / (height * height). (mass in kg and height in meter).
@@ -153,8 +149,8 @@ console.log('Is Mark\'s BMI higher than John\'s? ' + markHigherBMI);
 */
 
 /*****************************
-* If / else statements
-*/
+ * If / else statements
+ */
 /*
 var firstName = 'John';
 var civilStatus = 'single';
@@ -190,10 +186,9 @@ if (BMIMark > BMIJohn) {
 */
 
 
-
 /*****************************
-* Boolean logic
-*/
+ * Boolean logic
+ */
 /*
 var firstName = 'John';
 var age = 20;
@@ -210,10 +205,9 @@ if (age < 13) {
 */
 
 
-
 /*****************************
-* The Ternary Operator and Switch Statements
-*/
+ * The Ternary Operator and Switch Statements
+ */
 /*
 var firstName = 'John';
 var age = 14;
@@ -264,10 +258,9 @@ switch (true) {
 */
 
 
-
 /*****************************
-* Truthy and Falsy values and equality operators
-*/
+ * Truthy and Falsy values and equality operators
+ */
 /*
 // falsy values: undefined, null, 0, '', NaN
 // truthy values: NOT falsy values
@@ -289,10 +282,9 @@ if (height === '23') {
 */
 
 
-
 /*****************************
-* CODING CHALLENGE 2
-*/
+ * CODING CHALLENGE 2
+ */
 
 /*
 John and Mike both play basketball in different teams. In the latest 3 games, John's team scored 89, 120 and 103 points, while Mike's team scored 116, 94 and 123 points.
@@ -333,8 +325,8 @@ if (scoreJohn > scoreMike) {
 */
 
 /*****************************
-* Functions
-*/
+ * Functions
+ */
 /*
 function calculateAge(birthYear) {
     return 2018 - birthYear;
@@ -364,10 +356,9 @@ yearsUntilRetirement(1969, 'Jane');
 */
 
 
-
 /*****************************
-* Function Statements and Expressions
-*/
+ * Function Statements and Expressions
+ */
 /*
 // Function declaration
 // function whatDoYouDo(job, firstName) {}
@@ -392,10 +383,9 @@ console.log(whatDoYouDo('retired', 'Mark'));
 */
 
 
-
 /*****************************
-* Arrays
-*/
+ * Arrays
+ */
 /*
 // Initialize new array
 var names = ['John', 'Mark', 'Jane'];
@@ -428,10 +418,9 @@ console.log(isDesigner);
 */
 
 
-
 /*****************************
-* CODING CHALLENGE 3
-*/
+ * CODING CHALLENGE 3
+ */
 
 /*
 John and his family went on a holiday and went to 3 different restaurants. The bills were $124, $48 and $268.
@@ -525,10 +514,9 @@ console.log(tips, finalValues);
 // window.location = 'https://tomsander007.github.io/KL-complete-javascript-course/';
 
 
-
 /*****************************
-* Objects and properties
-*/
+ * Objects and properties
+ */
 /*
 // Object literal
 var john = {
@@ -558,10 +546,9 @@ console.log(jane);
 */
 
 
-
 /*****************************
-* Objects and methods
-*/
+ * Objects and methods
+ */
 /*
 var john = {
     firstName: 'John',
@@ -580,10 +567,9 @@ console.log(john);
 */
 
 
-
 /*****************************
-* CODING CHALLENGE 4
-*/
+ * CODING CHALLENGE 4
+ */
 
 /*
 Let's remember the first coding challenge where Mark and John compared their BMIs. Let's now implement the same functionality with objects and methods.
@@ -595,18 +581,51 @@ Remember: BMI = mass / height^2 = mass / (height * height). (mass in kg and heig
 
 GOOD LUCK 😀
 */
-// var mark = {
-//     fullName: 'Mark',
-//     mass: 110,
-//     height: 180,
-//     calcBMI: function () {
-//        this.bmi = this.mass /(this.height * 2);
-//
-//     }
-// };
+var mark = {
+    fullName: 'Mark',
+    mass: 110,
+    height: 180,
+    calcBMI: function () {
+        this.bmi = this.mass / (this.height * 2);
+        return this.bmi;
+
+    }
+};
+
+var jonh = {
+    fullName: 'John',
+    mass: 13,
+    height: 13,
+    calcBMI: function () {
+        this.bmi = this.mass / (this.height * 2);
+        return this.bmi;
+    }
+};
+
+//assign the new value to Mark
+mark.height = parseInt(prompt("Please input value for Mark's height"));
+mark.mass = parseInt(prompt("Please input the value for Mark's mass"));
+
+//assign the new value to John
+jonh.height = parseInt(prompt("Please input value for John's height"));
+jonh.mass = parseInt(prompt(" Please input the value for John's mass"));
 
 
-alert("Still processing, will be ready tomorrow");
+var johnBMI = jonh.calcBMI();
+var markBMI = mark.calcBMI();
+
+
+if (johnBMI > markBMI){
+    console.log(jonh.fullName + " bmi: " + johnBMI + " is higher than Mark's bmi");
+    alert(jonh.fullName + " bmi: " + johnBMI + " is higher than Mark's bmi");
+} else if (markBMI > johnBMI ){
+    console.log(mark.fullName + " bmi: " + markBMI + " is higher than John's bmi");
+    alert(mark.fullName + " bmi: " + markBMI + " is higher than John's bmi");
+} else {
+    console.log(jonh.fullName + "bmi: " + johnBMI + " is the same as " + mark.fullName + "bmi: " + markBMI );
+    alert(jonh.fullName + "bmi: " + johnBMI + " is the same as " + mark.fullName + "bmi: " + markBMI);
+}
+
 window.location = 'https://tomsander007.github.io/KL-complete-javascript-course/';
 /*
 var john = {
@@ -639,12 +658,9 @@ if (john.calcBMI() > mark.calcBMI()) {
 */
 
 
-
-
-
 /*****************************
-* Loops and iteration
-*/
+ * Loops and iteration
+ */
 
 /*
 // for loop
@@ -692,10 +708,9 @@ for (var i = john.length - 1; i >= 0; i--) {
 */
 
 
-
 /*****************************
-* CODING CHALLENGE 5
-*/
+ * CODING CHALLENGE 5
+ */
 
 /*
 Remember the tip calculator challenge? Let's create a more advanced version using everything we learned!
