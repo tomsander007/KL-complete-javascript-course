@@ -696,6 +696,8 @@ console.log("Restaurant is: " + resturantCount);
 alert("your restaurant that we visit is : " + resturantCount);
 
 
+
+
 var johnBill = {
     fullName: 'John Smith',
     bill: [],
@@ -707,18 +709,17 @@ var johnBill = {
             var percentage;
             if (johnBill.bill[i] < 50) {
                 percentage = 20;
-                this.tip[i] = (johnBill.bill[i] * percentage) / 100;
-                this.finalBill[i] = johnBill.bill[i] + this.john.tip[i];
+                return this.tip[i] = (johnBill.bill[i] * percentage) / 100;
+
             } else if (johnBill.bill[i] >= 50 && johnBill.bill[i] <= 200) {
                 percentage = 15;
-                this.tip[i] = (johnBill.bill[i] * percentage) / 100;
-                this.finalBill[i] = johnBill.bill[i] + this.john.tip[i];
+               return this.tip[i] = (johnBill.bill[i] * percentage) / 100;
             } else if (johnBill.bill[i] > 200) {
                 percentage = 10;
-                this.tip[i] = (johnBill.bill[i] * percentage) / 100;
-                this.finalBill[i] = johnBill.bill[i] + this.john.tip[i];
+               return this.tip[i] = (johnBill.bill[i] * percentage) / 100;
+
             } else {
-                alert("Unexpected input from value")
+                alert("Unexpected input from value");
                 window.location = 'https://tomsander007.github.io/KL-complete-javascript-course/';
             }
         }
@@ -728,6 +729,11 @@ var johnBill = {
 for (var i = 0; i < resturantCount; i++) {
     johnBill.bill[i] = parseInt(prompt("Please enter John's bill from restaurant " + i));
 }
+
+console.log("Test Bill info: " + johnBill.bill[0]);
+console.log("Test Bill info: " + johnBill.bill[1]);
+console.log("Test Bill info: " + johnBill.bill[2]);
+
 
 
 
@@ -742,16 +748,16 @@ var markBill = {
             var percentage;
             if (markBill.bill[i] < 100) {
                 percentage = 20;
-                this.tip[i] = (markBill.bill[i] * percentage) / 100;
-                this.finalBill[i] = markBill.bill[i] + this.markBill.tip[i];
+                return this.tip[i] = (markBill.bill[i] * percentage) / 100;
+
             } else if (markBill.bill[i] >= 100 && markBill.bill[i] <= 300) {
                 percentage = 10;
-                this.tip[i] = (markBill.bill[i] * percentage) / 100;
-                this.finalBill[i] = markBill.bill[i] + this.markBill.tip[i];
+               return this.tip[i] = (markBill.bill[i] * percentage) / 100;
+
             } else if (markBill.bill[i] > 300) {
                 percentage = 25;
-                this.tip[i] = (markBill.bill[i] * percentage) / 100;
-                this.finalBill[i] = markBill.bill[i] + this.markBill.tip[i];
+                return this.tip[i] = (markBill.bill[i] * percentage) / 100;
+
             } else {
                 alert("Unexpected input from value")
                 window.location = 'https://tomsander007.github.io/KL-complete-javascript-course/';
