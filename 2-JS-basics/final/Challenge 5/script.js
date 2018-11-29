@@ -692,11 +692,9 @@ GOOD LUCK 😀
 
 var resturantCount = 0;
 resturantCount = parseInt(prompt("How many restaurant that John and family went to? "));
+console.log("Restaurant is: " + resturantCount);
 alert("your restaurant that we visit is : " + resturantCount);
 
-for (var i = 0; i < resturantCount; i++) {
-    johnBill.bill[i] = parseInt(prompt("Please enter the bill from restaurant " + i));
-}
 
 var johnBill = {
     fullName: 'John Smith',
@@ -727,10 +725,11 @@ var johnBill = {
     }
 };
 
-resturantCount = parseInt(prompt("How many restaurant that John and family went to? "));
 for (var i = 0; i < resturantCount; i++) {
-    markBill.bill[i] = parseInt(prompt("Please enter the bill from restaurant " + i));
+    johnBill.bill[i] = parseInt(prompt("Please enter the bill from restaurant " + i));
 }
+
+
 
 var markBill = {
     fullName: 'John Smith',
@@ -760,6 +759,12 @@ var markBill = {
         }
     }
 };
+
+resturantCount = parseInt(prompt("How many restaurant that John and family went to? "));
+for (var i = 0; i < resturantCount; i++) {
+    markBill.bill[i] = parseInt(prompt("Please enter the bill from restaurant " + i));
+}
+
 // John  Tips
 var johnFirstTip = johnBill.tip[0];
 var johnSecondTip = johnBill.tip[1];
