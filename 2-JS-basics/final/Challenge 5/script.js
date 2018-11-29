@@ -726,84 +726,82 @@ var johnBill = {
 
 for (var i = 0; i < resturantCount; i++) {
     johnBill.bill[i] = parseInt(prompt("Please enter John's bill from restaurant " + i));
-    console.log("Tip: " + i + ": " + johnBill.calculateTip().tip[i])
 }
 
-
-
-
-
-
-
-var markBill = {
-    fullName: 'John Smith',
-    bill: [],
-    calculateTip: function () {
-        this.tip = [];
-        this.finalBill = [];
-
-        for (var i = 0; i < markBill.bill.length; i++) {
-            var percentage;
-            if (markBill.bill[i] < 100) {
-                percentage = 20;
-                return this.tip[i] = (markBill.bill[i] * percentage) / 100;
-
-            } else if (markBill.bill[i] >= 100 && markBill.bill[i] <= 300) {
-                percentage = 10;
-               return this.tip[i] = (markBill.bill[i] * percentage) / 100;
-
-            } else if (markBill.bill[i] > 300) {
-                percentage = 25;
-                return this.tip[i] = (markBill.bill[i] * percentage) / 100;
-
-            } else {
-                alert("Unexpected input from value")
-                window.location = 'https://tomsander007.github.io/KL-complete-javascript-course/';
-            }
-        }
-    }
-};
-
-resturantCount = parseInt(prompt("How many restaurant that John and family went to? "));
-for (var i = 0; i < resturantCount; i++) {
-    markBill.bill[i] = parseInt(prompt("Please enter the Marks's bill from restaurant " + i));
-}
+var lastBill = johnBill.calculateTip().tip[0];
+console.log("Tip first bill is: " + lastBill);
 
 alert("Still processing, will be ready tomorrow");
 window.location = 'https://tomsander007.github.io/KL-complete-javascript-course/';
-
-// John  Tips
-var johnFirstTip = johnBill.calculateTip().tip[0];
-var johnSecondTip = johnBill.calculateTip().tip[1];
-var johnThirdTip = johnBill.calculateTip().tip[2];
-var johnFourthTip = johnBill.calculateTip().tip[3];
-var johnFiveTip = johnBill.calculateTip().tip[4];
-
-//John bill
-var johnFirstBill = johnBill.calculateTip().bill[0];
-var johnSecondBill = johnBill.calculateTip().bill[1];
-var johnThirdBill = johnBill.calculateTip().bill[2];
-var johnFourthBill = johnBill.calculateTip().bill[3];
-var johnFiveTiBill = johnBill.calculateTip().bill[4];
-
-//John Final Bills
-
-
-// Mark Tips
-var markFirstTip = markBill.calculateTip().tip[0];
-var markSecondTip = markBill.calculateTip().tip[1];
-var markThirdTip = markBill.calculateTip().tip[2];
-var markFourthTip = markBill.calculateTip().tip[3];
-var markFiveTip = markBill.calculateTip().tip[4];
-
-//Mark Final bill
-var markFirstBill = markBill.calculateTip().bill[0];
-var markSecondBill = markBill.calculateTip().bill[1];
-var markThirdBill = markBill.calculateTip().bill[2];
-var markFourthBill = markBill.calculateTip().bill[3];
-var markFiveTiBill = markBill.calculateTip().bill[4];
-
-
-alert("Still processing, will be ready tomorrow");
-window.location = 'https://tomsander007.github.io/KL-complete-javascript-course/';
+//
+// var markBill = {
+//     fullName: 'John Smith',
+//     bill: [],
+//     calculateTip: function () {
+//         this.tip = [];
+//
+//         for (var i = 0; i < markBill.bill.length; i++) {
+//             var percentage;
+//             if (markBill.bill[i] < 100) {
+//                 percentage = 20;
+//                 return this.tip[i] = (markBill.bill[i] * percentage) / 100;
+//
+//             } else if (markBill.bill[i] >= 100 && markBill.bill[i] <= 300) {
+//                 percentage = 10;
+//                return this.tip[i] = (markBill.bill[i] * percentage) / 100;
+//
+//             } else if (markBill.bill[i] > 300) {
+//                 percentage = 25;
+//                 return this.tip[i] = (markBill.bill[i] * percentage) / 100;
+//
+//             } else {
+//                 alert("Unexpected input from value")
+//                 window.location = 'https://tomsander007.github.io/KL-complete-javascript-course/';
+//             }
+//         }
+//     }
+// };
+//
+// resturantCount = parseInt(prompt("How many restaurant that John and family went to? "));
+// for (var i = 0; i < resturantCount; i++) {
+//     markBill.bill[i] = parseInt(prompt("Please enter the Marks's bill from restaurant " + i));
+// }
+//
+// alert("Still processing, will be ready tomorrow");
+// window.location = 'https://tomsander007.github.io/KL-complete-javascript-course/';
+//
+// // John  Tips
+// var johnFirstTip = johnBill.calculateTip().tip[0];
+// var johnSecondTip = johnBill.calculateTip().tip[1];
+// var johnThirdTip = johnBill.calculateTip().tip[2];
+// var johnFourthTip = johnBill.calculateTip().tip[3];
+// var johnFiveTip = johnBill.calculateTip().tip[4];
+//
+// //John bill
+// var johnFirstBill = johnBill.calculateTip().bill[0];
+// var johnSecondBill = johnBill.calculateTip().bill[1];
+// var johnThirdBill = johnBill.calculateTip().bill[2];
+// var johnFourthBill = johnBill.calculateTip().bill[3];
+// var johnFiveTiBill = johnBill.calculateTip().bill[4];
+//
+// //John Final Bills
+//
+//
+// // Mark Tips
+// var markFirstTip = markBill.calculateTip().tip[0];
+// var markSecondTip = markBill.calculateTip().tip[1];
+// var markThirdTip = markBill.calculateTip().tip[2];
+// var markFourthTip = markBill.calculateTip().tip[3];
+// var markFiveTip = markBill.calculateTip().tip[4];
+//
+// //Mark Final bill
+// var markFirstBill = markBill.calculateTip().bill[0];
+// var markSecondBill = markBill.calculateTip().bill[1];
+// var markThirdBill = markBill.calculateTip().bill[2];
+// var markFourthBill = markBill.calculateTip().bill[3];
+// var markFiveTiBill = markBill.calculateTip().bill[4];
+//
+//
+// alert("Still processing, will be ready tomorrow");
+// window.location = 'https://tomsander007.github.io/KL-complete-javascript-course/';
 
