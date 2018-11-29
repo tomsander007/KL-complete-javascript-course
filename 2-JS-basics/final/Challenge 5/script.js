@@ -703,8 +703,6 @@ var johnBill = {
     bill: [],
     calculateTip: function () {
         this.tip = [];
-        this.finalBill = [];
-
         for (var i = 0; i < johnBill.bill.length; i++) {
             var percentage;
             if (johnBill.bill[i] < 50) {
@@ -728,11 +726,11 @@ var johnBill = {
 
 for (var i = 0; i < resturantCount; i++) {
     johnBill.bill[i] = parseInt(prompt("Please enter John's bill from restaurant " + i));
+    console.log("Tip: " + i + ": " + johnBill.calculateTip().tip)
 }
 
-console.log("Test Bill info: " + johnBill.bill[0]);
-console.log("Test Bill info: " + johnBill.bill[1]);
-console.log("Test Bill info: " + johnBill.bill[2]);
+
+
 
 
 
