@@ -729,7 +729,7 @@ for (var i = 0; i < resturantCount; i++) {
     johnBill.bill[i] = parseInt(prompt("Please enter John's bill from restaurant " + i));
 }
 
-var lastBill = johnBill.calculateTip().tip[0];
+var lastBill = johnBill.bill[0];
 console.log("Tip first bill is: " + lastBill);
 
 alert("Still processing, will be ready tomorrow");
