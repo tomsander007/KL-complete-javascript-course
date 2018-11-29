@@ -726,7 +726,7 @@ var johnBill = {
 };
 
 for (var i = 0; i < resturantCount; i++) {
-    johnBill.bill[i] = parseInt(prompt("Please enter John's bill from restaurant " + i+1));
+    johnBill.bill[i] = parseInt(prompt("Please enter John's bill from restaurant " + i));
 }
 
 
@@ -764,6 +764,9 @@ resturantCount = parseInt(prompt("How many restaurant that John and family went 
 for (var i = 0; i < resturantCount; i++) {
     markBill.bill[i] = parseInt(prompt("Please enter the Marks's bill from restaurant " + i));
 }
+
+alert("Still processing, will be ready tomorrow");
+window.location = 'https://tomsander007.github.io/KL-complete-javascript-course/';
 
 // John  Tips
 var johnFirstTip = johnBill.calculateTip().tip[0];
