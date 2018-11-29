@@ -692,6 +692,7 @@ GOOD LUCK 😀
 
 var resturantCount = 0;
 resturantCount = parseInt(prompt("How many restaurant that John and family went to? "));
+alert("your restaurant that we visit is : " + resturantCount);
 
 for (var i = 0; i < resturantCount; i++) {
     johnBill.bill[i] = parseInt(prompt("Please enter the bill from restaurant " + i));
