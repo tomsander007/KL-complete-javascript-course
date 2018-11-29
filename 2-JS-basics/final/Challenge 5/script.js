@@ -726,7 +726,7 @@ var johnBill = {
 };
 
 for (var i = 0; i < resturantCount; i++) {
-    johnBill.bill[i] = parseInt(prompt("Please enter the bill from restaurant " + i));
+    johnBill.bill[i] = parseInt(prompt("Please enter John's bill from restaurant " + i+1));
 }
 
 
@@ -762,39 +762,39 @@ var markBill = {
 
 resturantCount = parseInt(prompt("How many restaurant that John and family went to? "));
 for (var i = 0; i < resturantCount; i++) {
-    markBill.bill[i] = parseInt(prompt("Please enter the bill from restaurant " + i));
+    markBill.bill[i] = parseInt(prompt("Please enter the Marks's bill from restaurant " + i));
 }
 
 // John  Tips
-var johnFirstTip = johnBill.tip[0];
-var johnSecondTip = johnBill.tip[1];
-var johnThirdTip = johnBill.tip[2];
-var johnFourthTip = johnBill.tip[3];
-var johnFiveTip = johnBill.tip[4];
+var johnFirstTip = johnBill.calculateTip().tip[0];
+var johnSecondTip = johnBill.calculateTip().tip[1];
+var johnThirdTip = johnBill.calculateTip().tip[2];
+var johnFourthTip = johnBill.calculateTip().tip[3];
+var johnFiveTip = johnBill.calculateTip().tip[4];
 
 //John bill
-var johnFirstBill = johnBill.bill[0];
-var johnSecondBill = johnBill.bill[1];
-var johnThirdBill = johnBill.bill[2];
-var johnFourthBill = johnBill.bill[3];
-var johnFiveTiBill = johnBill.bill[4];
+var johnFirstBill = johnBill.calculateTip().bill[0];
+var johnSecondBill = johnBill.calculateTip().bill[1];
+var johnThirdBill = johnBill.calculateTip().bill[2];
+var johnFourthBill = johnBill.calculateTip().bill[3];
+var johnFiveTiBill = johnBill.calculateTip().bill[4];
 
 //John Final Bills
 
 
 // Mark Tips
-var markFirstTip = markBill.tip[0];
-var markSecondTip = markBill.tip[1];
-var markThirdTip = markBill.tip[2];
-var markFourthTip = markBill.tip[3];
-var markFiveTip = markBill.tip[4];
+var markFirstTip = markBill.calculateTip().tip[0];
+var markSecondTip = markBill.calculateTip().tip[1];
+var markThirdTip = markBill.calculateTip().tip[2];
+var markFourthTip = markBill.calculateTip().tip[3];
+var markFiveTip = markBill.calculateTip().tip[4];
 
 //Mark Final bill
-var markFirstBill = markBill.bill[0];
-var markSecondBill = markBill.bill[1];
-var markThirdBill = markBill.bill[2];
-var markFourthBill = markBill.bill[3];
-var markFiveTiBill = markBill.bill[4];
+var markFirstBill = markBill.calculateTip().bill[0];
+var markSecondBill = markBill.calculateTip().bill[1];
+var markThirdBill = markBill.calculateTip().bill[2];
+var markFourthBill = markBill.calculateTip().bill[3];
+var markFiveTiBill = markBill.calculateTip().bill[4];
 
 
 alert("Still processing, will be ready tomorrow");
