@@ -727,7 +727,7 @@ var johnBill = {
 
 for (var i = 0; i < resturantCount; i++) {
     var bill = parseInt(prompt("Please enter John's bill from restaurant " + i));
-    johnBill.bill[i].push(bill);
+    johnBill.bill[i] = bill;
     console.log("John First bill is: "+ johnBill.bill[i]);
     console.log("John First bill is: "+ johnBill.calculateTip().tip[i]);
 }
