@@ -726,11 +726,11 @@ var johnBill = {
 };
 
 for (var i = 0; i < resturantCount; i++) {
-    johnBill.bill[i] = parseInt(prompt("Please enter John's bill from restaurant " + i));
+    var bill = parseInt(prompt("Please enter John's bill from restaurant " + i));
+    johnBill.bill.push(bill);
 }
 
-var lastBill = johnBill.bill[0];
-console.log("Tip first bill is: " + lastBill);
+console.log("John First bill is: "+ johnBill.bill[0]);
 
 alert("Still processing, will be ready tomorrow");
 window.location = 'https://tomsander007.github.io/KL-complete-javascript-course/';
