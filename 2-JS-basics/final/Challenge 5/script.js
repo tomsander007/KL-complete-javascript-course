@@ -1,6 +1,6 @@
 /*****************************
-* Variables and data types
-*/
+ * Variables and data types
+ */
 /*
 var firstName = 'John';
 console.log(firstName);
@@ -24,10 +24,9 @@ var if = 23;
 */
 
 
-
 /*****************************
-* Variable mutation and type coercion
-*/
+ * Variable mutation and type coercion
+ */
 /*
 var firstName = 'John';
 var age = 28;
@@ -52,10 +51,9 @@ console.log(firstName + ' ' + lastName);
 */
 
 
-
 /*****************************
-* Basic operators
-*/
+ * Basic operators
+ */
 /*
 var year, yearJohn, yearMark;
 now = 2018;
@@ -87,10 +85,9 @@ console.log(typeof x);
 */
 
 
-
 /*****************************
-* Operator precedence
-*/
+ * Operator precedence
+ */
 /*
 var now = 2018;
 var yearJohn = 1989;
@@ -122,10 +119,9 @@ console.log(x);
 */
 
 
-
 /*****************************
-* CODING CHALLENGE 1
-*/
+ * CODING CHALLENGE 1
+ */
 
 /*
 Mark and John are trying to compare their BMI (Body Mass Index), which is calculated using the formula: BMI = mass / height^2 = mass / (height * height). (mass in kg and height in meter).
@@ -153,8 +149,8 @@ console.log('Is Mark\'s BMI higher than John\'s? ' + markHigherBMI);
 */
 
 /*****************************
-* If / else statements
-*/
+ * If / else statements
+ */
 /*
 var firstName = 'John';
 var civilStatus = 'single';
@@ -190,10 +186,9 @@ if (BMIMark > BMIJohn) {
 */
 
 
-
 /*****************************
-* Boolean logic
-*/
+ * Boolean logic
+ */
 /*
 var firstName = 'John';
 var age = 20;
@@ -210,10 +205,9 @@ if (age < 13) {
 */
 
 
-
 /*****************************
-* The Ternary Operator and Switch Statements
-*/
+ * The Ternary Operator and Switch Statements
+ */
 /*
 var firstName = 'John';
 var age = 14;
@@ -264,10 +258,9 @@ switch (true) {
 */
 
 
-
 /*****************************
-* Truthy and Falsy values and equality operators
-*/
+ * Truthy and Falsy values and equality operators
+ */
 /*
 // falsy values: undefined, null, 0, '', NaN
 // truthy values: NOT falsy values
@@ -289,10 +282,9 @@ if (height === '23') {
 */
 
 
-
 /*****************************
-* CODING CHALLENGE 2
-*/
+ * CODING CHALLENGE 2
+ */
 
 /*
 John and Mike both play basketball in different teams. In the latest 3 games, John's team scored 89, 120 and 103 points, while Mike's team scored 116, 94 and 123 points.
@@ -333,8 +325,8 @@ if (scoreJohn > scoreMike) {
 */
 
 /*****************************
-* Functions
-*/
+ * Functions
+ */
 /*
 function calculateAge(birthYear) {
     return 2018 - birthYear;
@@ -364,10 +356,9 @@ yearsUntilRetirement(1969, 'Jane');
 */
 
 
-
 /*****************************
-* Function Statements and Expressions
-*/
+ * Function Statements and Expressions
+ */
 /*
 // Function declaration
 // function whatDoYouDo(job, firstName) {}
@@ -392,10 +383,9 @@ console.log(whatDoYouDo('retired', 'Mark'));
 */
 
 
-
 /*****************************
-* Arrays
-*/
+ * Arrays
+ */
 /*
 // Initialize new array
 var names = ['John', 'Mark', 'Jane'];
@@ -428,10 +418,9 @@ console.log(isDesigner);
 */
 
 
-
 /*****************************
-* CODING CHALLENGE 3
-*/
+ * CODING CHALLENGE 3
+ */
 
 /*
 John and his family went on a holiday and went to 3 different restaurants. The bills were $124, $48 and $268.
@@ -525,10 +514,9 @@ console.log(tips, finalValues);
 // window.location = 'https://tomsander007.github.io/KL-complete-javascript-course/';
 
 
-
 /*****************************
-* Objects and properties
-*/
+ * Objects and properties
+ */
 /*
 // Object literal
 var john = {
@@ -558,10 +546,9 @@ console.log(jane);
 */
 
 
-
 /*****************************
-* Objects and methods
-*/
+ * Objects and methods
+ */
 /*
 var john = {
     firstName: 'John',
@@ -580,10 +567,9 @@ console.log(john);
 */
 
 
-
 /*****************************
-* CODING CHALLENGE 4
-*/
+ * CODING CHALLENGE 4
+ */
 
 /*
 Let's remember the first coding challenge where Mark and John compared their BMIs. Let's now implement the same functionality with objects and methods.
@@ -626,10 +612,9 @@ if (john.calcBMI() > mark.calcBMI()) {
 */
 
 
-
 /*****************************
-* Loops and iteration
-*/
+ * Loops and iteration
+ */
 
 /*
 // for loop
@@ -677,10 +662,9 @@ for (var i = john.length - 1; i >= 0; i--) {
 */
 
 
-
 /*****************************
-* CODING CHALLENGE 5
-*/
+ * CODING CHALLENGE 5
+ */
 
 /*
 Remember the tip calculator challenge? Let's create a more advanced version using everything we learned!
@@ -706,84 +690,107 @@ Mark likes to tip 20% of the bill when the bill is less than $100, 10% when the 
 GOOD LUCK 😀
 */
 
+var resturantCount = 0;
+resturantCount = parseInt(prompt("How many restaurant that John and family went to? "));
+
+for (var i = 0; i < resturantCount; i++) {
+    johnBill.bill[i] = parseInt(prompt("Please enter the bill from restaurant " + i));
+}
+
+var johnBill = {
+    fullName: 'John Smith',
+    bill: [],
+    calculateTip: function () {
+        this.tip = [];
+        this.finalBill = [];
+
+        for (var i = 0; i < johnBill.bill.length; i++) {
+            var percentage;
+            if (johnBill.bill[i] < 50) {
+                percentage = 20;
+                this.tip[i] = (johnBill.bill[i] * percentage) / 100;
+                this.finalBill[i] = johnBill.bill[i] + this.john.tip[i];
+            } else if (johnBill.bill[i] >= 50 && johnBill.bill[i] <= 200) {
+                percentage = 15;
+                this.tip[i] = (johnBill.bill[i] * percentage) / 100;
+                this.finalBill[i] = johnBill.bill[i] + this.john.tip[i];
+            } else if (johnBill.bill[i] > 200) {
+                percentage = 10;
+                this.tip[i] = (johnBill.bill[i] * percentage) / 100;
+                this.finalBill[i] = johnBill.bill[i] + this.john.tip[i];
+            } else {
+                alert("Unexpected input from value")
+                window.location = 'https://tomsander007.github.io/KL-complete-javascript-course/';
+            }
+        }
+    }
+};
+
+resturantCount = parseInt(prompt("How many restaurant that John and family went to? "));
+for (var i = 0; i < resturantCount; i++) {
+    markBill.bill[i] = parseInt(prompt("Please enter the bill from restaurant " + i));
+}
+
+var markBill = {
+    fullName: 'John Smith',
+    bill: [],
+    calculateTip: function () {
+        this.tip = [];
+        this.finalBill = [];
+
+        for (var i = 0; i < markBill.bill.length; i++) {
+            var percentage;
+            if (markBill.bill[i] < 100) {
+                percentage = 20;
+                this.tip[i] = (markBill.bill[i] * percentage) / 100;
+                this.finalBill[i] = markBill.bill[i] + this.markBill.tip[i];
+            } else if (markBill.bill[i] >= 100 && markBill.bill[i] <= 300) {
+                percentage = 10;
+                this.tip[i] = (markBill.bill[i] * percentage) / 100;
+                this.finalBill[i] = markBill.bill[i] + this.markBill.tip[i];
+            } else if (markBill.bill[i] > 300) {
+                percentage = 25;
+                this.tip[i] = (markBill.bill[i] * percentage) / 100;
+                this.finalBill[i] = markBill.bill[i] + this.markBill.tip[i];
+            } else {
+                alert("Unexpected input from value")
+                window.location = 'https://tomsander007.github.io/KL-complete-javascript-course/';
+            }
+        }
+    }
+};
+// John  Tips
+var johnFirstTip = johnBill.tip[0];
+var johnSecondTip = johnBill.tip[1];
+var johnThirdTip = johnBill.tip[2];
+var johnFourthTip = johnBill.tip[3];
+var johnFiveTip = johnBill.tip[4];
+
+//John bill
+var johnFirstBill = johnBill.bill[0];
+var johnSecondBill = johnBill.bill[1];
+var johnThirdBill = johnBill.bill[2];
+var johnFourthBill = johnBill.bill[3];
+var johnFiveTiBill = johnBill.bill[4];
+
+//John Final Bills
+
+
+// Mark Tips
+var markFirstTip = markBill.tip[0];
+var markSecondTip = markBill.tip[1];
+var markThirdTip = markBill.tip[2];
+var markFourthTip = markBill.tip[3];
+var markFiveTip = markBill.tip[4];
+
+//Mark Final bill
+var markFirstBill = markBill.bill[0];
+var markSecondBill = markBill.bill[1];
+var markThirdBill = markBill.bill[2];
+var markFourthBill = markBill.bill[3];
+var markFiveTiBill = markBill.bill[4];
+
+
 alert("Still processing, will be ready tomorrow");
 window.location = 'https://tomsander007.github.io/KL-complete-javascript-course/';
 
-
-/*
-var john = {
-    fullName: 'John Smith',
-    bills: [124, 48, 268, 180, 42],
-    calcTips: function() {
-        this.tips = [];
-        this.finalValues = [];
-                
-        for (var i = 0; i < this.bills.length; i++) {
-            // Determine percentage based on tipping rules
-            var percentage;
-            var bill = this.bills[i];
-            
-            if (bill < 50) {
-                percentage = .2;
-            } else if (bill >= 50 && bill < 200) {
-                percentage = .15;
-            } else {
-                percentage = .1;
-            }
-            
-            // Add results to the corresponing arrays
-            this.tips[i] = bill * percentage;
-            this.finalValues[i] = bill + bill * percentage;
-        }
-    }
-}
-
-var mark = {
-    fullName: 'Mark Miller',
-    bills: [77, 475, 110, 45],
-    calcTips: function() {
-        this.tips = [];
-        this.finalValues = [];
-                
-        for (var i = 0; i < this.bills.length; i++) {
-            // Determine percentage based on tipping rules
-            var percentage;
-            var bill = this.bills[i];
-            
-            if (bill < 100) {
-                percentage = .2;
-            } else if (bill >= 100 && bill < 300) {
-                percentage = .1;
-            } else {
-                percentage = .25;
-            }
-            
-            // Add results to the corresponing arrays
-            this.tips[i] = bill * percentage;
-            this.finalValues[i] = bill + bill * percentage;
-        }
-    }
-}
-
-function calcAverage(tips) {
-    var sum = 0;
-    for (var i = 0; i < tips.length; i++) {
-        sum = sum + tips[i];
-    }
-    return sum / tips.length;
-}
-
-// Do the calculations
-john.calcTips();
-mark.calcTips();
-
-john.average = calcAverage(john.tips);
-mark.average = calcAverage(mark.tips);
-console.log(john, mark);
-
-if (john.average > mark.average) {
-    console.log(john.fullName + '\'s family pays higher tips, with an average of $' + john.average);
-} else if (mark.average > john.average) {
-    console.log(mark.fullName + '\'s family pays higher tips, with an average of $' + mark.average);
-}
-*/
