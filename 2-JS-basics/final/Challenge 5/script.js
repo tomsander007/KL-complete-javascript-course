@@ -707,19 +707,20 @@ var johnBill = {
             var percentage;
             if (johnBill.bill[i] < 50) {
                 percentage = 20;
-                return this.tip[i] = (johnBill.bill[i] * percentage) / 100;
+                this.tip[i] = (johnBill.bill[i] * percentage) / 100;
 
             } else if (johnBill.bill[i] >= 50 && johnBill.bill[i] <= 200) {
                 percentage = 15;
-               return this.tip[i] = (johnBill.bill[i] * percentage) / 100;
+                this.tip[i] = (johnBill.bill[i] * percentage) / 100;
             } else if (johnBill.bill[i] > 200) {
                 percentage = 10;
-               return this.tip[i] = (johnBill.bill[i] * percentage) / 100;
+                this.tip[i] = (johnBill.bill[i] * percentage) / 100;
 
             } else {
                 alert("Unexpected input from value");
                 window.location = 'https://tomsander007.github.io/KL-complete-javascript-course/';
             }
+            return this.tip[i];
         }
     }
 };
