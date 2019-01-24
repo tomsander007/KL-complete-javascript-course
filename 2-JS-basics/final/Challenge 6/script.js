@@ -691,26 +691,26 @@ GOOD LUCK 😀
 */
 alert("Still processing, will be ready tomorrow");
 window.location = 'https://tomsander007.github.io/KL-complete-javascript-course/';
-//
-// var resturantCount = 0;
-// resturantCount = parseInt(prompt("How many restaurant that John and family went to? "));
-// console.log("Restaurant is: " + resturantCount);
-//
-//
-// var johnBill = {
-//     fullName: 'John Smith',
-//     bill: [],
-//     calculateTip: function () {
-//
-// };
-//
-//
-// for (var i = 0; i < resturantCount; i++) {
-//     var bill = parseInt(prompt("Please enter John's bill from restaurant " + i));
-//     console.log("John First bill is: "+ johnBill.bill[i]);
-//     var myTip = johnBill.calculateTip().tip[i];
-//     console.log("my tip is: " + myTip)
-// }
+
+var resturantCount = 0;
+resturantCount = parseInt(prompt("How many restaurant that John and family went to? "));
+console.log("Restaurant is: " + resturantCount);
+
+
+var johnBill = {
+    fullName: 'John Smith',
+    bill: [],
+    calculateTip: function () {
+
+};
+
+
+for (var i = 0; i < resturantCount; i++) {
+    var bill = parseInt(prompt("Please enter John's bill from restaurant " + i));
+    console.log("John First bill is: "+ johnBill.bill[i]);
+    var myTip = johnBill.calculateTip().tip[i];
+    console.log("my tip is: " + myTip)
+}
 //
 // var markBill = {
 //     fullName: 'John Smith',

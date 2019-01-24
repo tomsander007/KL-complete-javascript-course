@@ -5,6 +5,7 @@
 * [Challenge 3](2-JS-basics/final/Challenge 3/index.html)
 * [Challenge 4](2-JS-basics/final/Challenge 4/index.html)
 * [Challenge 5](2-JS-basics/final/Challenge 5/index.html)
+* [Challenge 6](2-JS-basics/final/Challenge 6/index.html)
 
 
 
